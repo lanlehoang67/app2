@@ -12,8 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2018_11_20_065013) do
 
-ActiveRecord::Schema.define(version: 2018_11_20_123614) do
-
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
