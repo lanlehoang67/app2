@@ -1,7 +1,11 @@
 module SessionsHelper
 	def log_in(user)
 		session[:user_id]=user.id
-		
+
+	end
+	def remember(user)
+		user.remember
+		cookies.permanent.signed[]
 	end
 	def current_user
 		if session[:user_id]
